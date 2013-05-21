@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B3C8C0E174B908B00842B90 /* ArchDirectoryObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C8C0D174B908B00842B90 /* ArchDirectoryObserver.m */; };
 		7BF1ECBC174A1F8B00699D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF1ECBB174A1F8B00699D38 /* Foundation.framework */; };
 		7BF1ECBF174A1F8B00699D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1ECBE174A1F8B00699D38 /* main.m */; };
 		7BF1ECC3174A1F8B00699D38 /* AtoZCodeFactory.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BF1ECC2174A1F8B00699D38 /* AtoZCodeFactory.1 */; };
+		7BF1ECD0174A2EC800699D38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF1ECCF174A2EC800699D38 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B3C8C0C174B908B00842B90 /* ArchDirectoryObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchDirectoryObserver.h; sourceTree = "<group>"; };
+		7B3C8C0D174B908B00842B90 /* ArchDirectoryObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchDirectoryObserver.m; sourceTree = "<group>"; };
 		7BF1ECB8174A1F8B00699D38 /* AtoZCodeFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AtoZCodeFactory; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF1ECBB174A1F8B00699D38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BF1ECBE174A1F8B00699D38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BF1ECC1174A1F8B00699D38 /* AtoZCodeFactory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtoZCodeFactory-Prefix.pch"; sourceTree = "<group>"; };
 		7BF1ECC2174A1F8B00699D38 /* AtoZCodeFactory.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AtoZCodeFactory.1; sourceTree = "<group>"; };
+		7BF1ECCF174A2EC800699D38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7BF1ECD1174AAC6800699D38 /* AtoZMacroDefines.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AtoZMacroDefines.plist; path = ../../../AtoZMacroDefines.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF1ECBC174A1F8B00699D38 /* Foundation.framework in Frameworks */,
+				7BF1ECD0174A2EC800699D38 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,7 @@
 		7BF1ECBA174A1F8B00699D38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BF1ECCF174A2EC800699D38 /* Cocoa.framework */,
 				7BF1ECBB174A1F8B00699D38 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +81,9 @@
 		7BF1ECBD174A1F8B00699D38 /* AtoZCodeFactory */ = {
 			isa = PBXGroup;
 			children = (
+				7B3C8C0C174B908B00842B90 /* ArchDirectoryObserver.h */,
+				7B3C8C0D174B908B00842B90 /* ArchDirectoryObserver.m */,
+				7BF1ECD1174AAC6800699D38 /* AtoZMacroDefines.plist */,
 				7BF1ECBE174A1F8B00699D38 /* main.m */,
 				7BF1ECC2174A1F8B00699D38 /* AtoZCodeFactory.1 */,
 				7BF1ECC0174A1F8B00699D38 /* Supporting Files */,
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF1ECBF174A1F8B00699D38 /* main.m in Sources */,
+				7B3C8C0E174B908B00842B90 /* ArchDirectoryObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +220,7 @@
 		7BF1ECC7174A1F8B00699D38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtoZCodeFactory/AtoZCodeFactory-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -217,6 +230,7 @@
 		7BF1ECC8174A1F8B00699D38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtoZCodeFactory/AtoZCodeFactory-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -242,6 +256,7 @@
 				7BF1ECC8174A1F8B00699D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
