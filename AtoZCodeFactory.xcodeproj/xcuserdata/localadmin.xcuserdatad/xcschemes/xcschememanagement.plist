@@ -7,12 +7,22 @@
 		<key>AtoZCodeFactory.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>154</integer>
+			<integer>18</integer>
+		</dict>
+		<key>AtoZObjC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7BF1ECB7174A1F8B00699D38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BFBF4F6175DCF82007A84AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
