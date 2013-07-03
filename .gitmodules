@@ -1,3 +1,4 @@
 [submodule "BBUncrustifyPlugin-Xcode"]
-	path = BBUncrustifyPlugin-Xcode
+	path = XcodePlugin
 	url = https://github.com/mralexgray/BBUncrustifyPlugin-Xcode.git
+	ignore = dirty
